@@ -96,6 +96,8 @@ systemctl daemon-reload
 systemctl start kubelet
 systemctl enable kubelet.service
  kubeadm token create --print-join-command (Generate the master join token on the master node)
+ kubeadm join 172.31.81.57:6443 --token k7b97x.ab7wm7e61fevmfh3 --discovery-token-ca-cert-hash sha256:25e7c00abae5630b00d5c9e34574016aff55000ac80a6877693371cb1f5dc312
+
  sudo su - ubuntu
 
 
